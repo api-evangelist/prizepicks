@@ -3,14 +3,16 @@ url: https://raw.githubusercontent.com/api-evangelist/prizepicks/refs/heads/main
 name: PrizePicks
 x-type: company
 description: >-
-  PrizePicks is a daily fantasy sports pick'em app where users select over/under projections on player stats. Partner APIs available via data providers.
+  PrizePicks is a US daily-fantasy/pick-em sports operator focused on player-prop projections
+  (more/less). PrizePicks does not publish a public developer REST API. Internal/private endpoints
+  power the web and mobile apps but are not documented or licensed for third-party use.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Sports
-  - Fantasy
-  - Pick'em
-  - Mobile
-  - DFS
+  - Daily Fantasy Sports
+  - Player Props
+  - Pick-em
+  - Gaming
+  - Regulated
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
@@ -18,6 +20,8 @@ apis: []
 common:
   - type: Website
     url: https://prizepicks.com/
+  - type: AffiliatesProgram
+    url: https://prizepicks.com/promotions
   - type: Plans
     url: plans/prizepicks-plans-pricing.yml
   - type: RateLimits

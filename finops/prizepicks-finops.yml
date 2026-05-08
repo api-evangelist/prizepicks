@@ -5,18 +5,21 @@ provider: PrizePicks
 providerId: prizepicks
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
-- Sports
-- Fantasy
-- Pick'em
-- Mobile
-- DFS
+- Daily Fantasy Sports
+- Player Props
+- Pick-em
+- Gaming
+- Regulated
 - FinOps
 - Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for PrizePicks. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: >-
+  FOCUS-aligned FinOps profile for PrizePicks. There is no API spend. From a partner perspective,
+  PrizePicks is either an affiliate revenue source (income) or a marketing/sponsorship line (expense).
+  Treat as a non-API FinOps record for catalog completeness.
+notes: No API spend; affiliate income or marketing expense only.
 sources:
 - https://prizepicks.com/
 - https://focus.finops.org/focus-specification/v1-3/
@@ -27,40 +30,37 @@ alignedWith:
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 publisherName: PrizePicks
-serviceCategory: Sports
+serviceCategory: Daily Fantasy Sports
 billingModel:
-  pricingCategory: To Be Reconciled
-  billingFrequency: Monthly
+  pricingCategory: N/A (No API)
+  billingFrequency: N/A
   billingCurrency: USD
   chargeCategories:
-  - Usage
-  - Purchase
   - Adjustment
 focusColumns:
   ServiceName: PrizePicks
-  ServiceCategory: Sports
+  ServiceCategory: Daily Fantasy Sports
   ProviderName: PrizePicks
   PublisherName: PrizePicks
   InvoiceIssuerName: PrizePicks
   BillingCurrency: USD
-  ChargeCategory: Usage
+  ChargeCategory: Adjustment
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: affiliate_revshare
+  description: Revenue share or CPA earned via the affiliate/influencer program (income).
+  unit: USD
   aggregation: sum
   dimensions:
-  - account
-  - resource
+  - program
 principles:
 - name: Visibility
-  description: Pull provider invoices or usage exports until a self-serve usage feed is documented.
+  description: Track affiliate income; PrizePicks does not bill API consumers.
 - name: Allocation
-  description: Tag invoice line items to consuming business units in your FinOps store.
+  description: Allocate affiliate income or sponsorship expense to the marketing channel.
 - name: Optimization
-  description: Levers depend on the provider's billing model; review at renewal once reconciled.
+  description: Not applicable for API spend.
 - name: Accountability
-  description: Assign a contract owner to review billing against negotiated terms.
+  description: Marketing/partnerships team owns the relationship.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

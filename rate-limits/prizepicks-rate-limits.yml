@@ -5,31 +5,34 @@ provider: PrizePicks
 providerId: prizepicks
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
-- Sports
-- Fantasy
-- Pick'em
-- Mobile
-- DFS
+- Daily Fantasy Sports
+- Player Props
+- Pick-em
+- Gaming
+- Regulated
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for PrizePicks. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: >-
+  Not applicable. PrizePicks does not publish a public developer REST API; there are no public rate-
+  limit thresholds. Reverse-engineered private endpoints are not supported and may be blocked at any
+  time.
+notes: N/A — no public API.
 sources:
 - https://prizepicks.com/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+- name: N/A
+  scope: n/a
+  metric: n/a
+  limit: no public API
+  notes: PrizePicks does not publish developer rate limits.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+- name: Use Licensed Data Vendor
+  description: For player-prop or sports data, license from a specialized vendor; do not scrape PrizePicks endpoints.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

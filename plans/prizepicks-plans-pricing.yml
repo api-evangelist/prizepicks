@@ -5,37 +5,39 @@ provider: PrizePicks
 providerId: prizepicks
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
-- Sports
-- Fantasy
-- Pick'em
-- Mobile
-- DFS
+- Daily Fantasy Sports
+- Player Props
+- Pick-em
+- Gaming
+- Regulated
 - Plans
-description: Placeholder plans/pricing artifact for PrizePicks. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled.
+description: >-
+  PrizePicks does not sell developer API access. Revenue is from end-user entry fees on player-prop
+  pick-em games. There is no developer plan or pricing.
+notes: No public developer API; affiliate/influencer marketing program only.
 sources:
 - https://prizepicks.com/
 plans:
-- id: prizepicks-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers once pricing is reconciled.
+- id: prizepicks-affiliates
+  name: PrizePicks Affiliates / Influencers
+  type: free
+  description: Affiliate/influencer program for marketing partners; CPA or revenue share on referred users. No data API.
   entries:
-  - label: API Access
-    name: api_access
+  - label: Affiliate
+    name: affiliate
     type: flat
-    metric: varies
+    metric: ngr-or-cpa
     limit: -1
-    timeFrame: usage
-    geo: global
+    timeFrame: monthly
+    geo: US
     unit: 1
-    price: see https://prizepicks.com/
+    price: contact partnerships
     userMultiplied: false
   elements:
-  - name: Pending Reconciliation
+  - name: Marketing/lead-gen only
+  - name: No API for odds or player projections
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
