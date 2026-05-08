@@ -1,0 +1,29 @@
+aid: prizepicks
+url: https://raw.githubusercontent.com/api-evangelist/prizepicks/refs/heads/main/apis.yml
+name: PrizePicks
+x-type: company
+description: >-
+  PrizePicks is a daily fantasy sports pick'em app where users select over/under projections on player stats. Partner APIs available via data providers.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Sports
+  - Fantasy
+  - Pick'em
+  - Mobile
+  - DFS
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://prizepicks.com/
+  - type: Plans
+    url: plans/prizepicks-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/prizepicks-rate-limits.yml
+  - type: FinOps
+    url: finops/prizepicks-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
