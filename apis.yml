@@ -1,7 +1,7 @@
 aid: prizepicks
 url: https://raw.githubusercontent.com/api-evangelist/prizepicks/refs/heads/main/apis.yml
 name: PrizePicks
-x-type: company
+kind: company
 description: >-
   PrizePicks is a US daily-fantasy/pick-em sports operator focused on player-prop projections
   (more/less). PrizePicks does not publish a public developer REST API. Internal/private endpoints
