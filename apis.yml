@@ -18,6 +18,10 @@ modified: '2026-05-08'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/myprizepicks
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/prize-picks
   - type: Website
     url: https://prizepicks.com/
   - type: AffiliatesProgram
