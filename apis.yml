@@ -6,7 +6,7 @@ description: >-
   PrizePicks is a US daily-fantasy/pick-em sports operator focused on player-prop projections
   (more/less). PrizePicks does not publish a public developer REST API. Internal/private endpoints
   power the web and mobile apps but are not documented or licensed for third-party use.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Daily Fantasy Sports
   - Player Props
