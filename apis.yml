@@ -18,6 +18,10 @@ modified: '2026-05-08'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/prizepicks-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/prizepicks-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/myprizepicks
   - type: LinkedIn
