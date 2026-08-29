@@ -6,6 +6,17 @@ description: >-
   PrizePicks is a US daily-fantasy/pick-em sports operator focused on player-prop projections
   (more/less). PrizePicks does not publish a public developer REST API. Internal/private endpoints
   power the web and mobile apps but are not documented or licensed for third-party use.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
