@@ -37,10 +37,12 @@ tags:
   - Gaming
   - Regulated
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.prizepicks.com/newsroom
+    type: Blog
   - type: VulnerabilityDisclosure
     url: security/prizepicks-vulnerability-disclosure.yml
   - type: DomainSecurity
